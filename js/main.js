@@ -1,4 +1,4 @@
-import { notify } from "../utils/notification.js";
+import { notify } from "../js/notification.js";
 
 window.onload = () => {
   'use strict';
