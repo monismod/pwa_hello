@@ -1,3 +1,5 @@
+import { notify } from "./notification.js";
+
 window.onload = () => {
   'use strict';
 
@@ -6,3 +8,9 @@ window.onload = () => {
              .register('./sw.js');
   }
 }
+
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", () => {
+  notify("notification 2", "hello again")
+});
+
